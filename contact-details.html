@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact-details Of the Owner " />
+    <meta
+      name=" keywords"
+      content="Pradeep, saravanan, Pradeepsaravanan, programmer_pro369"
+    />
+
+    <title>Contact-Details Of Pradeep saravanan</title>
+  </head>
+  <body>
+    <h4>Contact Details :</h4>
+    <ol>
+      <li>
+        <a href="mailto: starktony0832@gmail.com" target="_blank">@Email</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/programmer_pro369/" target="_blank"
+          >@Instagram</a
+        >
+      </li>
+      <li>
+        <a href="https://www.facebook.com/pradeep.srideep.5" target="_blank"
+          >@FaceBook</a
+        >
+      </li>
+    </ol>
+    <p>Residental addres: <br />Dharmapuri,India ,TamilNadu</p>
+    <a href="tel: +91 8428729033">Mobile</a>
+    <fieldset>
+      <legend>
+        Mail Details
+        <!-- <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefcapture"
+          target="_blank"
+        >
+          Click Here</a
+        > -->
+      </legend>
+      <!--The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user-->
+      <!--POST method is used for send Secure Data and The GET Method is used to Sed Non-Sensitive datas Its not widely used -->
+      <form action="mailto: starktony0832@gmail.com" method="POST">
+        <label for="name"> Your Name:</label>
+        <input
+          type="text"
+          name="yourName"
+          id="name"
+          required
+          placeholder="Enter Your Name"
+        />
+        <br />
+        <label for="pw">Enter Your Pasword:</label>
+        <input
+          name="yourPassword"
+          type="password"
+          id="pw"
+          required
+          placeholder="Enter Your Pasword"
+        />
+        <br />
+        <label for="mail"> Email:</label>
+        <input
+          type="email"
+          name="yourMail"
+          id="mail"
+          required
+          placeholder="Enter Your Mail ID"
+        /><br />
+        <label for="files">Upload your Image</label>
+
+        <!--<input type="file"> its has some  Attributes those are 
+        1.Capture ------	Media capture input method in file upload controls
+               -->
+        <input
+          type="file"
+          name="youProfile"
+          id="files"
+          requireds
+          multiple
+          accept="Image/png, Image/jpg,Image/jpeg"
+        />
+        <br />
+        <label for="Message"></label>
+        <textarea
+          name="review"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter your Message "
+        >
+        </textarea>
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+
+        <br />
+      </form>
+    </fieldset>
+  </body>
+</html>
