@@ -10,10 +10,11 @@
       content="Pradeep, saravanan, Pradeepsaravanan, programmer_pro369"
     />
 
-    <title>Contact-Details Of Pradeep saravanan</title>
+    <title>Contact-Details Of Pradeep Saravanan</title>
+    <link rel="stylesheet" href="CSSFILES/index.css" />
   </head>
   <body>
-    <h4>Contact Details :</h4>
+    <h3>Contact Details :</h3>
     <ol>
       <li>
         <a href="mailto: starktony0832@gmail.com" target="_blank">@Email</a>
@@ -30,7 +31,8 @@
       </li>
     </ol>
     <p>Residental addres: <br />Dharmapuri,India ,TamilNadu</p>
-    <a href="tel: +91 8428729033">Mobile</a>
+    <a href="tel: +91 8428729033">Tel: +91</a>
+    <hr />
     <fieldset>
       <legend>
         Mail Details
@@ -43,7 +45,11 @@
       </legend>
       <!--The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user-->
       <!--POST method is used for send Secure Data and The GET Method is used to Sed Non-Sensitive datas Its not widely used -->
-      <form action="mailto: starktony0832@gmail.com" method="POST">
+      <form
+        action="mailto: starktony0832@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
         <label for="name"> Your Name:</label>
         <input
           type="text"
@@ -84,7 +90,9 @@
           accept="Image/png, Image/jpg,Image/jpeg"
         />
         <br />
-        <label for="Message"></label>
+        <label for="Message">Enter Your Message Down Below:</label>
+        <br />
+        <br />
         <textarea
           name="review"
           id=""

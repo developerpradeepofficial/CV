@@ -1,0 +1,31 @@
+body {
+  background-color: #f3f4ed;
+}
+hr {
+  border-style: none;
+  border-top: 5px dotted rgba(238, 17, 17, 0.2);
+  background-color: #f3f4ed;
+  width: 5%;
+  border-width: 5px;
+}
+h1 {
+  color: #3c415c;
+  text-align: center;
+}
+h3 {
+  color: #66bfbf;
+  text-align: center;
+}
+ul,
+ol,
+table {
+  margin: auto;
+  width: 60%;
+  padding: 25px;
+}
+footer {
+  text-align: center;
+}
+td {
+  text-align: center;
+}
