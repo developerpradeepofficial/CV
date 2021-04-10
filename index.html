@@ -34,7 +34,62 @@
        font-weight: 450;
       }
     </style>
-    <link rel="stylesheet" href="index.css">
+    <!--
+When We add JavaScript to Our Html Document Insome Poins The Script is loaded or Rendered Before Our HTML File This Cause an Unexpected Error 
+this Type Of Problem Is Solved by some Techniqueies 
+Those are : 
+1. Add defer or async Attribute into the Script tag ;
+2. Add the Javascript Code At the Bottom Of the Page Or Body ;
+3. add The javascript Event Listener Tech 
+document.addEventListener("DOMContentLoaded", function() {
+  ...
+});
+
+
+Async : => Scripts loaded using the async attribute (see below) will download the script without 
+blocking rendering the page and will execute it as soon as the script finishes downloading
+Eg: 
+<script async src="js/vendor/jquery.js"></script>
+async should be used when you have a bunch of background scripts to load in
+, and you just want to get them in place as soon as possible.
+
+Async is download and save the file in anyorder No matter what the order of the file you said in the code 
+
+
+
+Defer: =>
+Scripts loaded using the defer attribute (see below) will run in the order they 
+appear in the page and execute them as soon as the script and content are downloaded:
+
+
+Eg:  
+<script defer src="js/vendor/jquery.js"></script>
+
+<script defer src="js/script2.js"></script>
+
+<script defer src="js/script3.js"></script>
+
+All the scripts with the defer attribute will load in the order they appear on the page.
+
+
+
+Summary: 
+
+async and defer both instruct the browser to download the script(s) in a separate thread, 
+while the rest of the page (the DOM, etc.) 
+is downloading, so the page loading is not blocked by the scripts.
+If your scripts should be run immediately and they don't have any dependencies, then use async.
+If your scripts need to wait for parsing and depend on other scripts and/or the DOM being in place, 
+load them using defer and put their corresponding <script> elements in the order you want the browser 
+  to execute them.
+
+  -->   
+
+  
+ <script src="#" defer async></script>
+    <link rel="stylesheet" href="CSSFILES/index.css">
+  <!-- The Link  rel="shortcut Icon " type is used to Display the icon Of Our Web site In the Title or Tab bar and BookMarks Page -->
+    <link rel="shortcut icon" href="/Udemy_FSD/HTML-Personal_Website/Images/PersonalCon.png" type="image/x-icon">
   </head>
   <body>
     <!-- The <img> tag used to display an Image in Your Web Page From Internal and External Resources and You must need to add a Alt attribute which is Discribe Alternative text of your image and Its also used by SEO to Find out
@@ -68,7 +123,7 @@ This will Change the image as per the dimension we specified in the code........
     <table cellspacing="20">
       <tr><td><img
         style="height: 150px; width: 150px"
-        src="Images/circle-cropped.png"
+        src="Images/Stark_cropped.png"
         alt="My Profile(Pradeep Saravanan)" title="My Profile"
       /></td>
     <td><p>
@@ -77,6 +132,22 @@ This will Change the image as per the dimension we specified in the code........
 
       <!-- The <strong> tag and the <b> tag are not same <strong> tag gives a more importance to the content and highlight to it bold but 
        the <b> tag just Style it bold not give the importance-->
+
+
+        <!--
+          Moving back up into parent directories: If you wanted to include a hyperlink inside 
+          projects/index.html pointing to pdfs/project-brief.pdf, you'd have to go up a directory level,
+           then back down into the pdf directory. To go up a directory, use two dots — .. — so the URL 
+           you would use is ../pdfs/project-brief.pdf:
+
+           Eg:  => 
+           <p>A link to my <a href="../pdfs/project-brief.pdf">project brief</a>.</p>
+
+
+           Note: You can combine multiple instances of these features into complex URLs, if needed, for example: ../../../complex/path/to/my/file.html.
+
+
+        -->
       <em
         >Founder and CEO Of
         <strong>
@@ -91,7 +162,7 @@ This will Change the image as per the dimension we specified in the code........
       </em>
     </p>
     <p>
-      I am a Curiosity Person ❤️ Learning new Skills and Things and Building my
+      I am a Curious Person ❤️ Learning new Skills and Things and Building my
       Own Life with a Perfect plan 
     </p></td></tr>
     </table>
@@ -199,6 +270,14 @@ This will Change the image as per the dimension we specified in the code........
       Contact Details :
       <a href="contact-details.html" target="_blank" >Click Here</a>
     </p>
+
+
+
+    <!--Divs are so convenient to use that it's easy to use them too much.
+       As they carry no semantic value, they just clutter your HTML code. 
+       Take care to use them only when there is no better semantic solution and try to reduce 
+       their usage to the minimum otherwise you'll have a hard time updating and maintaining your 
+       documents-->
     </footer>
   </body>
 </html>
